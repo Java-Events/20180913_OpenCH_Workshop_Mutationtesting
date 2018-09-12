@@ -1,0 +1,25 @@
+workspace:
+  base: /drone/src
+  path: event-oc1-2018-tut4383-mutation-testing
+
+pipeline:
+  build:
+    image: ${JDK_VERSION}
+    secrets: [tb_license]
+    pull: true
+    commands:
+      - echo -n "$TB_LICENSE" > /root/vaadin.testbench.developer.license
+      - mkdir /root/.m2
+      - mkdir /root/.testbenchextensions
+      - cp /drone/src/event-oc1-2018-tut4383-mutation-testing/_data/nexus/settings.xml /root/.m2/settings.xml
+      - cp /drone/src/event-oc1-2018-tut4383-mutation-testing/_data/configs/config-drone.properties /root/.testbenchextensions/config.properties
+#      - cat ${GPG_KEY_PRIVATE} > /root/.gnupg/secring.gpg
+#      - cat ${GPG_KEY_PUBLIC} > /root/.gnupg/pubring.gpg
+      - mvn clean --batch-mode
+      - mvn test --batch-mode
+
+matrix:
+  JDK_VERSION:
+  - svenruppert/maven-3.5-jdk-10
+  - svenruppert/maven-3.5-jdk-oracle-10
+  - svenruppert/maven-3.5-jdk-zulu-10
