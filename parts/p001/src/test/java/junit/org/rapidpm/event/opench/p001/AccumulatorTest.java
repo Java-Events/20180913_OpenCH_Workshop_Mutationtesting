@@ -1,4 +1,4 @@
-package org.rapidpm.junit.demo;
+package junit.org.rapidpm.event.opench.p001;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.*;

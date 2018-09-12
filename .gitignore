@@ -1,3 +1,11 @@
+*.iml
+.idea/*
+webdriver/*
+
+
+
+
+
 target/
 pom.xml.tag
 pom.xml.releaseBackup
