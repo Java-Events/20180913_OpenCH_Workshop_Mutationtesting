@@ -15,8 +15,12 @@
  */
 package org.rapidpm.vaadin.v10.issuetracker;
 
+import com.vaadin.flow.component.ClickEvent;
+import com.vaadin.flow.component.ComponentEventListener;
 import com.vaadin.flow.component.Composite;
+import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Div;
+import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.Theme;
 import com.vaadin.flow.theme.lumo.Lumo;
@@ -29,5 +33,9 @@ public class VaadinApp extends Composite<Div> implements HasLogger {
   public VaadinApp() {
     Div content = getContent();
     content.setSizeFull();
+    Button button = new Button();
+    button.setText("click me");
+    button.addClickListener(e -> content.add(new Span("uiuiuiuiuii")));
+    content.add(button);
   }
 }
