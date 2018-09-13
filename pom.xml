@@ -212,6 +212,17 @@
       <!--<artifactId>testbench-ng-m-pageobject-vaadin-v10-tb</artifactId>-->
       <!--<scope>test</scope>-->
     <!--</dependency>-->
+
+    <!--Logging-->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+    </dependency>
+
   </dependencies>
 
   <build>
