@@ -16,13 +16,11 @@
 package org.rapidpm.vaadin.v10.issuetracker;
 
 import com.vaadin.flow.component.Composite;
-import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.Theme;
 import com.vaadin.flow.theme.lumo.Lumo;
 import org.rapidpm.dependencies.core.logger.HasLogger;
-import org.rapidpm.vaadin.v10.issuetracker.views.login.LoginViewOO;
 
 @Route("")
 @Theme(value = Lumo.class, variant = Lumo.DARK)
