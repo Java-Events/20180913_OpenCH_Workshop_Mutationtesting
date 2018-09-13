@@ -1,4 +1,4 @@
-package junit.chopen.junit;
+package junit.org.rapidpm.event.opench.p001;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

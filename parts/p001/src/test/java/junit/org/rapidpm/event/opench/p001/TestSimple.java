@@ -1,4 +1,4 @@
-package junit.chopen.junit;
+package junit.org.rapidpm.event.opench.p001;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -6,19 +6,16 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
-import org.junit.jupiter.api.TestInstance.Lifecycle;
 
-@TestInstance(Lifecycle.PER_CLASS)
-class TestNonStatic {
+class TestSimple {
 
 	@BeforeAll
-	void beforeAll() {
+	static void beforeAll() {
 		System.out.println("Before all tests");
 	}
 
 	@AfterAll
-	void afterAll() {
+	static void afterAll() {
 		System.out.println("After all tests");
 	}
 

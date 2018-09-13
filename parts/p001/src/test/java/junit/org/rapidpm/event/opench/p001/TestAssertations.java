@@ -1,4 +1,4 @@
-package junit.chopen.junit;
+package junit.org.rapidpm.event.opench.p001;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;

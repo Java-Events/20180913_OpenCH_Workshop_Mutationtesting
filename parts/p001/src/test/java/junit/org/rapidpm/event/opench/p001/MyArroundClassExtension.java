@@ -1,4 +1,4 @@
-package junit.chopen.junit;
+package junit.org.rapidpm.event.opench.p001;
 
 import org.junit.jupiter.api.extension.AfterAllCallback;
 import org.junit.jupiter.api.extension.BeforeAllCallback;
