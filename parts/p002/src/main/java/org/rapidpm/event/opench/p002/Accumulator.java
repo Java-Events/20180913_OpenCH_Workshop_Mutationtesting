@@ -1,4 +1,4 @@
-package org.rapidpm.event.opench.p001;
+package org.rapidpm.event.opench.p002;
 
 public class Accumulator {
 	private int sum = 0;
