@@ -26,6 +26,7 @@ class TestTestInfo {
 	@DisplayName("TEST 1")
 	@Tag("my-tag")
 	void test1(TestInfo testInfo) {
+		
 		assertEquals("TEST 1", testInfo.getDisplayName());
 		assertTrue(testInfo.getTags().contains("my-tag"));
 	}

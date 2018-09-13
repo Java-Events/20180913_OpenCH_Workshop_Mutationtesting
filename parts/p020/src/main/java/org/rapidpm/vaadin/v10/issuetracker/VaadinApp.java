@@ -16,6 +16,7 @@
 package org.rapidpm.vaadin.v10.issuetracker;
 
 import com.vaadin.flow.component.Composite;
+import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.Theme;
@@ -29,5 +30,6 @@ public class VaadinApp extends Composite<Div> implements HasLogger {
   public VaadinApp() {
     Div content = getContent();
     content.setSizeFull();
+    content.add(new Button("I'm a button"));
   }
 }
